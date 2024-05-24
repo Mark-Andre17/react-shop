@@ -1,0 +1,100 @@
+.card
+    padding-top: 50px
+    padding-bottom: 50px
+    background: rgb(2,0,36)
+    background: linear-gradient(171deg, rgba(2,0,36,1) 0%, rgba(3,42,99,1) 0%, rgba(4,70,141,1) 0%, rgba(5,86,165,1) 0%, rgba(5,92,174,1) 0%, rgba(4,101,123,1) 0%, rgba(5,97,148,1) 0%, rgba(4,102,120,1) 50%, rgba(77,77,83,1) 50%, rgba(159,159,162,1) 100%, rgba(77,78,84,1) 100%, rgba(75,81,88,1) 100%, rgba(40,142,165,1) 100%, rgba(0,212,255,1) 100%)
+
+    > .container
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        
+.card-img
+    position: relative
+    z-index: 6
+    width: 400px
+    height: 600px
+
+    > img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        box-shadow: 16px 16px 10px 0px rgba(34, 60, 80, 0.28)
+        transition: all linear 0.8s
+
+        &:first-child
+            opacity: 1
+
+        &:last-child
+            opacity: 0
+.opacity
+    opacity: 0 !important
+    transition: all linear 0.8s !important
+
+.nonopacity
+    opacity: 1 !important
+    transition: all linear 0.8s !important
+
+.card-info
+    width: 400px
+    background-color: white
+    padding: 20px
+    max-height: 320px
+    align-self: center
+
+.card-board
+    border: 2px dashed darkred  
+    padding: 10px  
+
+    > h2
+        font-weight: 400
+
+    > h1
+        font-weight: 600
+        font-size: 36px
+
+    > h3
+        font-weight: 400
+        font-size: 24px
+        color: lightgrey
+
+    > p
+        margin-bottom: 15px
+        padding-bottom: 5px
+        border-bottom: 1px solid grey
+
+.card-price-btn
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    > p
+        font-size: 36px
+
+    > button
+        position: relative
+        padding: 15px
+        text-transform: uppercase
+        background-color: #2d2a2a
+        color: white
+        transition: all 0.8s linear
+        z-index: 1
+
+        &:hover
+            color: #2d2a2a
+        
+        &::before
+            content: ''
+            position: absolute
+            height: 100%
+            width: 0
+            background-color: white
+            top: 0
+            left: 0
+            transition: all 0.8s linear
+            z-index: -1
+
+        &:hover::before
+            width: 100%
+            transition: all 0.8s linear

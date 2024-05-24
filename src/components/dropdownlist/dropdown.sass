@@ -1,0 +1,141 @@
+.drop-list
+    width: 500px
+    margin: 0 auto
+    position: relative
+    height: 100vh
+
+.drop-title
+    position: relative
+    z-index: 5
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #166c94
+    padding: 10px
+    border-radius: 10px
+    margin-bottom: 20px
+    cursor: pointer
+
+    >h1
+        font-size: 26px
+        font-weight: 400
+        color: white
+.circle
+    position: relative
+    height: 30px
+    width: 30px
+    border-radius: 50%
+    margin: 20px
+    >button
+        position: relative
+        border-radius: 50%
+        color: white
+        background-color: #166c94
+        border: none
+        font-size:30px  
+        text-align: center   
+        top: -5px
+.circle
+    &::before, &::after
+        position: absolute
+        content: ''
+        height: 100%
+        width: 100%
+        top: 0%
+        left: 0%
+        border-radius: 50%
+        box-shadow: 0 0 25px #76b5ec
+        animation: glow-grow 2s ease-out infinite
+.circle
+    &::after
+        animation-delay: .70s
+    button 
+        animation-delay: 1.20s
+            
+@keyframes glow-grow 
+  0% 
+    opacity: 0
+    transform: scale(1)
+  80% 
+    opacity: 1
+  100% 
+    transform: scale(2)
+    opacity: 0
+ul
+    display: flex
+    position: relative
+    flex-direction: column
+    justify-content: space-between
+    padding-left: 10px
+    padding-right: 10px
+    height: 330px
+    width: 100%
+    top: -100px
+    transition: all 0.8s linear
+
+    >span
+        position: absolute
+        width: 20px
+        height: 20px
+        transform: rotate(45deg)
+        background-color: transparent
+
+    >li
+        position: absolute
+        padding-bottom: 20px
+        padding-top: 20px
+        width: 95%
+
+        &:nth-child(2)
+            top: 0px
+            transition: all 0.8s linear
+        &:nth-child(3)
+            top: 0px
+            transition: all 1s linear
+        &:nth-child(4)
+            top: 0px
+            transition: all 1.2s linear
+        &:nth-child(5)
+            top: 0px
+            transition: all 1.5s linear
+        &:nth-child(6)
+            top: 0px
+            transition: all 1.8s linear
+        &:last-child
+            border-bottom: none
+  
+
+.show-list
+    box-shadow: 5px 7px 40px 15px rgba(34, 60, 80, 0.16)
+    height: 330px
+    transition: all 3s linear
+    top:30px
+
+
+    >span
+        background-color: white
+        top: -10px
+        transition: top 3s linear
+
+    >li
+
+        &:nth-child(2)
+            top: 0px
+            transition: top 2.5s linear
+        &:nth-child(3)
+            top: 65px
+            transition: top 2s linear
+        &:nth-child(4)
+            top: 130px
+            transition: top 1.5s linear
+        &:nth-child(5)
+            top: 195px
+            transition: top 1s linear
+        &:nth-child(6)
+            top: 260px
+            transition: top 0.8s linear
+
+        &:hover
+            color:#166c94
+            

@@ -1,0 +1,109 @@
+.card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(171deg, rgb(2, 0, 36) 0%, rgb(3, 42, 99) 0%, rgb(4, 70, 141) 0%, rgb(5, 86, 165) 0%, rgb(5, 92, 174) 0%, rgb(4, 101, 123) 0%, rgb(5, 97, 148) 0%, rgb(4, 102, 120) 50%, rgb(77, 77, 83) 50%, rgb(159, 159, 162) 100%, rgb(77, 78, 84) 100%, rgb(75, 81, 88) 100%, rgb(40, 142, 165) 100%, rgb(0, 212, 255) 100%);
+}
+.card > .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  position: relative;
+  z-index: 6;
+  width: 400px;
+  height: 600px;
+}
+.card-img > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 16px 16px 10px 0px rgba(34, 60, 80, 0.28);
+  transition: all linear 0.8s;
+}
+.card-img > img:first-child {
+  opacity: 1;
+}
+.card-img > img:last-child {
+  opacity: 0;
+}
+
+.opacity {
+  opacity: 0 !important;
+  transition: all linear 0.8s !important;
+}
+
+.nonopacity {
+  opacity: 1 !important;
+  transition: all linear 0.8s !important;
+}
+
+.card-info {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  max-height: 320px;
+  align-self: center;
+}
+
+.card-board {
+  border: 2px dashed darkred;
+  padding: 10px;
+}
+.card-board > h2 {
+  font-weight: 400;
+}
+.card-board > h1 {
+  font-weight: 600;
+  font-size: 36px;
+}
+.card-board > h3 {
+  font-weight: 400;
+  font-size: 24px;
+  color: lightgrey;
+}
+.card-board > p {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.card-price-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-price-btn > p {
+  font-size: 36px;
+}
+.card-price-btn > button {
+  position: relative;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #2d2a2a;
+  color: white;
+  transition: all 0.8s linear;
+  z-index: 1;
+}
+.card-price-btn > button:hover {
+  color: #2d2a2a;
+}
+.card-price-btn > button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background-color: white;
+  top: 0;
+  left: 0;
+  transition: all 0.8s linear;
+  z-index: -1;
+}
+.card-price-btn > button:hover::before {
+  width: 100%;
+  transition: all 0.8s linear;
+}/*# sourceMappingURL=card.css.map */
