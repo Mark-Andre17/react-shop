@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-shop/static/css/main.fe7efd7c.css",
+    "main.js": "/react-shop/static/js/main.c4839c97.js",
+    "static/media/6.png": "/react-shop/static/media/6.36f3159ed57d72010c5d.png",
+    "static/media/item-blue.jpg": "/react-shop/static/media/item-blue.2103f69bf3b1c8b44f34.jpg",
+    "static/media/9.png": "/react-shop/static/media/9.6a372a5310c90efa7194.png",
+    "static/media/item-black.jpg": "/react-shop/static/media/item-black.dd74251d47c485703b4d.jpg",
+    "static/media/7.png": "/react-shop/static/media/7.90ab69af2c3f2941d117.png",
+    "static/media/6.jpg": "/react-shop/static/media/6.4e69b7d5e555abeffc6c.jpg",
+    "static/media/8.png": "/react-shop/static/media/8.067bb232afcb90cd8ed8.png",
+    "static/media/5.jpg": "/react-shop/static/media/5.ca2967275e72c1029c1e.jpg",
+    "static/media/13.jpg": "/react-shop/static/media/13.ae7efb315f9f6f5cf6f3.jpg",
+    "static/media/14.jpg": "/react-shop/static/media/14.e6b63a437c529e434078.jpg",
+    "static/media/11.jpg": "/react-shop/static/media/11.8b5162e70ad6baa23f19.jpg",
+    "static/media/3.jpg": "/react-shop/static/media/3.07309aa84d98ffdac447.jpg",
+    "index.html": "/react-shop/index.html",
+    "main.fe7efd7c.css.map": "/react-shop/static/css/main.fe7efd7c.css.map",
+    "main.c4839c97.js.map": "/react-shop/static/js/main.c4839c97.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe7efd7c.css",
+    "static/js/main.c4839c97.js"
+  ]
+}
